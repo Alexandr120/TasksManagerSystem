@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+#app {
+    padding-bottom: 50px;
+}
+body {
+    background-color: #eae8f1;
+    font-family: 'Montserrat', 'SansSerif', sans-serif;
+}
+.header {
+    height: fit-content;
+    background-color: #101010;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-nav-link {
+    background: none;
+    border: none;
+    font-size: large;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+.custom-nav-link:hover {
+    transform: scale(1.2);
+}
+.custom-nav-link.active {
+    border-bottom: 1px solid white;
+}
+.auth-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorize-block,
+.authorize-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.authorize-block {
+    background-color: #8ccccc;
+    width: 40%;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.isInvalid {
+    border: 1px solid red;
+    background-color: #ffdfdf!important;
+}
+
+.task,
+.team {
+    padding: 5px;
+    margin: 5px 0;
+    font-size: small;
+    align-items: center;
+    border-radius: 5px;
+}
+.task {
+    transition: transform 0.1s ease-in-out;
+}
+.task:hover {
+     transform: scale(1.02);
+}
+
+.team {
+    background-color: #c8d4e8;
+}
+.team:hover {
+    background-color: #b7bfd5;
+}
+.task-list-header,
+.task-list-filters,
+.team-list-header,
+.team-list-filters {
+    padding: 5px;
+    margin: 5px 0;
+    font-size: small;
+    align-items: center;
+    text-align: center;
+}
+.task-list-header,
+.team-list-header {
+    font-weight: bold;
+}
+.pointer {
+    cursor: pointer;
+}
+.active-filter {
+    display: flex;
+    gap: 10px;
+
+    padding: 5px 10px;
+    background-color: #a4bff8;
+    border-radius: 5px;
+}
+.remove-filter {
+    cursor: pointer;
+    color: #d56d6d;
+}
+.page-item {
+    cursor: pointer;
+}
+.breadcrumb-card {
+    font-size: x-large;
+    background-color: #c9ccd6;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.task-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    height: 200px;
+    padding: 10px;
+    background-color: #f8fafc;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.users-list {
+    height: 240px;
+}
+.pending {
+    background-color: white;
+}
+.in_progress {
+    background-color: #9ca7f0;
+}
+.completed {
+    background-color: #9cf0a8;
+}
+
+.user-comment {
+    background-color: #e0efef;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.all-users-list,
+.current-team-users {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #f7f9fb;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+}
+.current-team-users {
+    height: 300px;
+}
+.all-users-list {
+    height: 348px;
+}
+.current-team-users > div,
+.all-users-list > div {
+    padding: 5px;
+}
+.current-team-users > div:hover,
+.all-users-list > div:hover {
+    background-color: #e9e7f0;
+}
+
+
+
